@@ -7,8 +7,10 @@
 }
 
 .Credit-current {
+  position: absolute;
   font-size: 10em;
   height: 100%;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -45,8 +47,25 @@
 }
 
 .Credit-action-enter.Credit-action-enter-active {
-  opacity: 0;
+  opacity: 0.01;
   bottom: 100px;
   transition: all 1000ms ease-in;
-  /*transition: bottom 500ms ease-in;*/
+}
+
+.Credit-current-enter {
+  opacity: 0.01;
+}
+
+.Credit-current-enter.Credit-current-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+.Credit-current-leave {
+  opacity: 1;
+}
+
+.Credit-current-leave.Credit-current-leave-active {
+  opacity: 0.01;
+  transition: opacity 500ms ease-in;
 }
