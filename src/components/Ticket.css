@@ -1,0 +1,8 @@
+.Ticket {
+  padding: 15px;
+  margin-right: 9px;
+}
+
+.Ticket.active {
+  background-color: #D4AF37;
+}

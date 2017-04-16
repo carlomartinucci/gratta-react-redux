@@ -1,0 +1,36 @@
+button {
+  background: none;
+  border: 0;
+  color: inherit;
+  cursor: pointer; 
+  font: inherit;
+  line-height: normal;
+  overflow: visible;
+  padding: 0;
+  -webkit-user-select: none; /* for button */
+     -moz-user-select: none;
+      -ms-user-select: none;
+}
+input::-moz-focus-inner,
+button::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+.Scratch {
+  text-align: center;
+  padding: 40px 0;
+  background-color: #f8f8f8;
+}
+
+.Scratch-button {
+  display: inline-block;
+  padding: 15px 40px;
+  background-color: #D4AF37;
+  color: #010101;
+}
+
+.Scratch-button:hover, .Scratch-button:focus, .Scratch-button:active {
+  background-color: #B8860B;
+  color: #010101;
+}

@@ -1,0 +1,52 @@
+.Credit {
+  text-align: center;
+  height: 100%;
+  padding: 0;
+  /*background-color: #f8f8f8;*/
+  position: relative;
+}
+
+.Credit-current {
+  font-size: 10em;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Credit-last {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.Credit-action {
+  position: absolute;
+  bottom: 100px;
+  width: 100%;
+  font-size: 4em;
+  opacity: 0;
+}
+
+.Credit-cost {
+  color: red;
+}
+
+.Credit-win {
+  color: green;
+}
+
+
+.Credit-action-enter {
+  opacity: 1;
+  bottom: 0;
+}
+
+.Credit-action-enter.Credit-action-enter-active {
+  opacity: 0;
+  bottom: 100px;
+  transition: all 1000ms ease-in;
+  /*transition: bottom 500ms ease-in;*/
+}
