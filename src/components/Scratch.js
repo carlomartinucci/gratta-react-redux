@@ -1,4 +1,6 @@
-import React, { PropTypes } from 'react'
+import React from 'react'
+import PropTypes from 'prop-types';
+
 import './Scratch.css'
 
 const Scratch = ({onClick, ticket}) => (
@@ -11,5 +13,19 @@ const Scratch = ({onClick, ticket}) => (
     </button>
   </div>
 )
+
+Scratch.PropTypes = {
+  onClick: PropTypes.func,
+  ticket: PropTypes.shape({
+    name: PropTypes.string,
+    cost: PropTypes.number,
+    winnings: PropTypes.arrayOf(
+      PropTypes.shape({
+        quantity: PropTypes.number,
+        win: PropTypes.number
+      })
+    )
+  })
+}
 
 export default Scratch

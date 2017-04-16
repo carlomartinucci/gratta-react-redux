@@ -1,4 +1,5 @@
-import React, { PropTypes } from 'react'
+import React from 'react'
+import PropTypes from 'prop-types';
 import CSSTransitionGroup from 'react-transition-group/CSSTransitionGroup'
 import './Credit.css'
 
@@ -23,5 +24,12 @@ const Credit = ({creditID, current, lastCost, lastWin}) => (
     </div>
   </div>
 )
+
+Credit.PropTypes = {
+  creditID: PropTypes.number,
+  current: PropTypes.number,
+  lastCost: PropTypes.number,
+  lastWin: PropTypes.number
+}
 
 export default Credit
